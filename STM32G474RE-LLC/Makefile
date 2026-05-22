@@ -149,7 +149,8 @@ CPPWARN = -Wall -Wextra -Wundef
 
 ##############################################################################
 # Start of user section
-UINCDIR = inc
+UINCDIR = inc \
+		  inc/cfg
 
 # List all user C define here, like -D_DEBUG=1
 UDEFS =
