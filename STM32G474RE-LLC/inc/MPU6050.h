@@ -8,6 +8,10 @@
 #ifndef INC_MPU6050_H_
 #define INC_MPU6050_H_
 
+#include "hal.h"
+
+extern const I2CConfig i2ccfg;
+
 struct MPU6050_STRUCT {
   float ax;
   float ay;

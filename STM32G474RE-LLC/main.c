@@ -29,6 +29,7 @@ int main(void) {
   chSysInit();
 
 
+  i2cStart(&I2CD2, &i2ccfg);
   chThdCreateStatic(waLedBlink, sizeof(waLedBlink), NORMALPRIO, ThreadLed, NULL);
 
   while (true) {
