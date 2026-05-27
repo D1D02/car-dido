@@ -23,19 +23,31 @@ static THD_FUNCTION(ThreadLed, arg) {
 
 
 
-int main(void) {
+int main( void )
+{
 
   halInit();
   chSysInit();
 
+  setupPeripherals();
 
-  i2cStart(&I2CD2, &i2ccfg);
-  chThdCreateStatic(waLedBlink, sizeof(waLedBlink), NORMALPRIO, ThreadLed, NULL);
+  chThdCreateStatic( waLedBlink, sizeof( waLedBlink ), NORMALPRIO, ThreadLed, NULL );
 
-  while (true) {
+  while( true )
+  {
 
-    chThdSleepMilliseconds(10000);
+    chThdSleepMilliseconds( 10000 );
+
   }
+
+}
+
+
+void setupPeripherals( void )
+{
+
+  i2cStart( &I2CD2, &i2ccfg );
+
 }
 
 /*

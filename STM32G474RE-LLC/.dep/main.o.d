@@ -94,8 +94,8 @@ build/obj/main.o: main.c ../../os/rt/include/ch.h \
  ../../os/hal/include/hal_st.h \
  ../../os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h \
  ../../os/hal/include/hal_mmc_spi.h ../../os/hal/include/hal_serial_usb.h \
- inc/main.h inc/MPU6050.h ../../test/rt/source/test/rt_test_root.h \
- ../../os/test/include/ch_test.h \
+ inc/main.h inc/MPU6050.h inc/cfg/MPU6050_CFG.h \
+ ../../test/rt/source/test/rt_test_root.h ../../os/test/include/ch_test.h \
  ../../test/rt/source/test/rt_test_sequence_001.h \
  ../../test/rt/source/test/rt_test_sequence_002.h \
  ../../test/rt/source/test/rt_test_sequence_003.h \
@@ -256,6 +256,7 @@ cfg/mcuconf.h:
 ../../os/hal/include/hal_serial_usb.h:
 inc/main.h:
 inc/MPU6050.h:
+inc/cfg/MPU6050_CFG.h:
 ../../test/rt/source/test/rt_test_root.h:
 ../../os/test/include/ch_test.h:
 ../../test/rt/source/test/rt_test_sequence_001.h:

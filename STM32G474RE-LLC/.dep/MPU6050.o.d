@@ -93,7 +93,8 @@ build/obj/MPU6050.o: src/MPU6050.c src/../inc/MPU6050.h \
  ../../os/hal/include/hal_wdg.h ../../os/hal/include/hal_wspi.h \
  ../../os/hal/include/hal_st.h \
  ../../os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h \
- ../../os/hal/include/hal_mmc_spi.h ../../os/hal/include/hal_serial_usb.h
+ ../../os/hal/include/hal_mmc_spi.h ../../os/hal/include/hal_serial_usb.h \
+ src/../inc/cfg/MPU6050_CFG.h
 src/../inc/MPU6050.h:
 ../../os/hal/include/hal.h:
 ../../os/common/portability/GCC/ccportab.h:
@@ -231,3 +232,4 @@ cfg/mcuconf.h:
 ../../os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h:
 ../../os/hal/include/hal_mmc_spi.h:
 ../../os/hal/include/hal_serial_usb.h:
+src/../inc/cfg/MPU6050_CFG.h:

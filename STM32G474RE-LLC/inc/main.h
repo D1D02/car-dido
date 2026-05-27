@@ -12,4 +12,7 @@
 
 struct MPU6050_STRUCT imu_data;
 
+
+void setupPeripherals( void );
+
 #endif /* INC_MAIN_H_ */

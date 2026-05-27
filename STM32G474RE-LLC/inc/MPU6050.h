@@ -9,6 +9,7 @@
 #define INC_MPU6050_H_
 
 #include "hal.h"
+#include "cfg/MPU6050_CFG.h"
 
 extern const I2CConfig i2ccfg;
 
@@ -21,5 +22,6 @@ struct MPU6050_STRUCT {
   float gz;
 };
 
+void MPU6050_init( I2CDriver * );
 
 #endif /* INC_MPU6050_H_ */
