@@ -10,7 +10,7 @@
 
 #include "MPU6050.h"
 
-struct MPU6050_STRUCT imu_data;
+mpu6050_data_t imu_data;
 
 
 void setupPeripherals( void );

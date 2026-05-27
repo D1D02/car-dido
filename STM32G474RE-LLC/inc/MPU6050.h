@@ -13,14 +13,15 @@
 
 extern const I2CConfig i2ccfg;
 
-struct MPU6050_STRUCT {
+typedef struct MPU6050_STRUCT {
   float ax;
   float ay;
   float az;
+  float t;
   float gx;
   float gy;
   float gz;
-};
+}mpu6050_data_t;
 
 void MPU6050_init( I2CDriver * );
 
